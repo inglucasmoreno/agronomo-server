@@ -11,6 +11,7 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 import { join } from 'path';
 import { SocketModule } from './socket/socket.module';
 import { ConfigModule } from '@nestjs/config';
+import { UnidadesMedidaModule } from './unidades-medida/unidades-medida.module';
 
 @Module({
   imports: [
@@ -38,7 +39,7 @@ import { ConfigModule } from '@nestjs/config';
     UsuariosModule, 
     AuthModule,
     InicializacionModule,  // Para inicializacion de tablas - Configurable en el controlador/servicio
-    SocketModule,          // Para trabajar con WebSocket
+    SocketModule, UnidadesMedidaModule,          // Para trabajar con WebSocket
     
   ],
   
