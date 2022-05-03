@@ -11,7 +11,7 @@ export class UnidadMedidaUpdateDTO {
     @ApiProperty({ type: String, required: true, description: 'Usuario actualizador' })
     readonly updatorUser: string;
     
-    @ApiProperty({ type: Boolean, description: 'Estado de provincia' })
+    @ApiProperty({ type: Boolean, description: 'Estado de unidad' })
     readonly activo: boolean;
 
 }

@@ -12,6 +12,9 @@ import { join } from 'path';
 import { SocketModule } from './socket/socket.module';
 import { ConfigModule } from '@nestjs/config';
 import { UnidadesMedidaModule } from './unidades-medida/unidades-medida.module';
+import { CamposModule } from './campos/campos.module';
+import { LotesModule } from './lotes/lotes.module';
+import { ProductosModule } from './productos/productos.module';
 
 @Module({
   imports: [
@@ -39,7 +42,7 @@ import { UnidadesMedidaModule } from './unidades-medida/unidades-medida.module';
     UsuariosModule, 
     AuthModule,
     InicializacionModule,  // Para inicializacion de tablas - Configurable en el controlador/servicio
-    SocketModule, UnidadesMedidaModule,          // Para trabajar con WebSocket
+    SocketModule, UnidadesMedidaModule, CamposModule, LotesModule, ProductosModule,          // Para trabajar con WebSocket
     
   ],
   

@@ -69,7 +69,5 @@ export class UnidadesMedidaController {
             unidad
         });
     }
-
-
-
+    
 }
