@@ -2,6 +2,9 @@ import { ApiProperty } from "@nestjs/swagger";
 
 export class ProductoUpdateDTO {
 
+    @ApiProperty({ type: String, required: true, description: 'Codigo de producto' })
+    readonly codigo: string;
+
     @ApiProperty({ type: String, required: true, description: 'Descripcion de producto' })
     readonly descripcion: string;
 

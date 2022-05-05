@@ -1,6 +1,7 @@
 import { Document } from "mongoose";
 
 export interface IProducto extends Document {
+   readonly codigo: string,
    readonly descripcion: string,
    readonly unidad: string,
    readonly stock_minimo: boolean,

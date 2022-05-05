@@ -2,6 +2,12 @@ import { Schema } from 'mongoose';
 
 export const productoSchema = new Schema({
 
+  codigo: {
+    type: String,
+    uppercase: true,
+    trim: true
+  },
+
   descripcion: {
     type: String,
     uppercase: true,

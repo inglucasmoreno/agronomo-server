@@ -4,6 +4,10 @@ import { IsNotEmpty } from "class-validator";
 export class ProductoDTO {
 
     @IsNotEmpty()
+    @ApiProperty({ type: String, required: true, description: 'Codigo de producto' })
+    readonly codigo: string;
+
+    @IsNotEmpty()
     @ApiProperty({ type: String, required: true, description: 'Descripcion de producto' })
     readonly descripcion: string;
 
