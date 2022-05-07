@@ -3,7 +3,6 @@ import { IsNotEmpty } from "class-validator";
 
 export class ProductoDTO {
 
-    @IsNotEmpty()
     @ApiProperty({ type: String, required: true, description: 'Codigo de producto' })
     readonly codigo: string;
 
@@ -19,7 +18,6 @@ export class ProductoDTO {
     @ApiProperty({ type: Boolean, required: true, description: 'Stock minimo - Flag' })
     readonly stock_minimo: boolean;
 
-    @IsNotEmpty()
     @ApiProperty({ type: Number, required: true, description: 'Stock minimo - Flag' })
     readonly cantidad_minima: number;
 

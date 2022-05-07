@@ -1,13 +1,6 @@
 import { Schema } from 'mongoose';
 
-export const productoSchema = new Schema({
-
-  codigo: {
-    type: String,
-    uppercase: true,
-    default: '',
-    trim: true
-  },
+export const proveedorSchema = new Schema({
 
   descripcion: {
     type: String,
@@ -16,20 +9,28 @@ export const productoSchema = new Schema({
     trim: true
   },
 
-  unidad: {
-    type: Schema.Types.ObjectId,
-    required: true,
-    ref: 'unidad-medida'
+  tipo_identificacion: {
+    type: String,
+    default: '',
+    trim: true
   },
 
-  stock_minimo: {
-    type: Boolean,
-    default: false    
+  identificacion: {
+    type: String,
+    default: '',
+    trim: true
   },
 
-  cantidad_minima: {
-    type: Number,
-    default: 0
+  telefono: {
+    type: String,
+    default: '',
+    trim: true
+  },
+
+  direccion: {
+    type: String,
+    default: '',
+    trim: true
   },
 
   creatorUser: {
@@ -49,4 +50,4 @@ export const productoSchema = new Schema({
     default: true,
   },
 
-},{ timestamps: true });
+},{ timestamps: true, collection: 'proveedores' });

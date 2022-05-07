@@ -15,6 +15,7 @@ import { UnidadesMedidaModule } from './unidades-medida/unidades-medida.module';
 import { CamposModule } from './campos/campos.module';
 import { LotesModule } from './lotes/lotes.module';
 import { ProductosModule } from './productos/productos.module';
+import { ProveedoresModule } from './proveedores/proveedores.module';
 
 @Module({
   imports: [
@@ -42,7 +43,7 @@ import { ProductosModule } from './productos/productos.module';
     UsuariosModule, 
     AuthModule,
     InicializacionModule,  // Para inicializacion de tablas - Configurable en el controlador/servicio
-    SocketModule, UnidadesMedidaModule, CamposModule, LotesModule, ProductosModule,          // Para trabajar con WebSocket
+    SocketModule, UnidadesMedidaModule, CamposModule, LotesModule, ProductosModule, ProveedoresModule,          // Para trabajar con WebSocket
     
   ],
   
