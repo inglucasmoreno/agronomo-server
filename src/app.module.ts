@@ -16,6 +16,9 @@ import { CamposModule } from './campos/campos.module';
 import { LotesModule } from './lotes/lotes.module';
 import { ProductosModule } from './productos/productos.module';
 import { ProveedoresModule } from './proveedores/proveedores.module';
+import { StockCamposModule } from './stock-campos/stock-campos.module';
+import { IngresosModule } from './ingresos/ingresos.module';
+import { IngresoProductosModule } from './ingreso-productos/ingreso-productos.module';
 
 @Module({
   imports: [
@@ -43,7 +46,7 @@ import { ProveedoresModule } from './proveedores/proveedores.module';
     UsuariosModule, 
     AuthModule,
     InicializacionModule,  // Para inicializacion de tablas - Configurable en el controlador/servicio
-    SocketModule, UnidadesMedidaModule, CamposModule, LotesModule, ProductosModule, ProveedoresModule,          // Para trabajar con WebSocket
+    SocketModule, UnidadesMedidaModule, CamposModule, LotesModule, ProductosModule, ProveedoresModule, StockCamposModule, IngresosModule, IngresoProductosModule,          // Para trabajar con WebSocket
     
   ],
   
