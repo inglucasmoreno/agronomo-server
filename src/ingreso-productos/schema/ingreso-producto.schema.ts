@@ -1,6 +1,6 @@
 import { Schema } from 'mongoose';
 
-export const ingresoProductosSchema = new Schema({
+export const ingresoProductoSchema = new Schema({
 
   ingreso: {
     type: Schema.Types.ObjectId,

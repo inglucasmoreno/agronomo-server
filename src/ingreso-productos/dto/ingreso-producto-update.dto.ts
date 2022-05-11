@@ -1,6 +1,6 @@
 import { ApiProperty } from "@nestjs/swagger";
 
-export class IngresoProductosUpdateDTO {
+export class IngresoProductoUpdateDTO {
 
     @ApiProperty({ type: String, required: true, description: 'Identificador de ingreso' })
     readonly ingreso: string;

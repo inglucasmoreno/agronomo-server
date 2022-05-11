@@ -1,7 +1,7 @@
 import { ApiProperty } from "@nestjs/swagger";
 import { IsNotEmpty } from "class-validator";
 
-export class IngresoProductosDTO {
+export class IngresoProductoDTO {
 
     @IsNotEmpty()
     @ApiProperty({ type: String, required: true, description: 'Identificador de ingreso' })
